@@ -140,4 +140,7 @@ setup(
     packages=find_packages(exclude=["build"]),
     ext_modules=[extension],
     cmdclass={"build_ext": BuildExtension},
+    install_requires=[
+          'torch',
+      ]
 )
